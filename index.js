@@ -36,6 +36,7 @@ var renderCommits = (commits) => {
       <li>${commit.commit.message}</li>
       </ul>`
   });
+  return commitList;
 };
 
 
