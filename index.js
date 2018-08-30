@@ -9,6 +9,12 @@ var searchRepositories = () => {
   });
 };
 
+var renderSearchResults = (results) => {
+  const resultsList = results.items.map(result => {
+    return ``
+  })
+}
+
 
 $(document).ready(function (){
 });
