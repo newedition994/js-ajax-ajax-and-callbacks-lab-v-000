@@ -7,7 +7,7 @@ var searchRepositories = () => {
   }).fail(error => {
     displayError()
   });
-}
+};
 
 
 $(document).ready(function (){
