@@ -28,6 +28,16 @@ var showCommits = (el) => {
   });
 };
 
+var renderCommits = (commits) => {
+  const commitList = commits.map(commit => {
+    return `
+    <ul>
+      <li>${commit.sha}</li>
+      <li>${commit.commit.message}</li>
+      </ul>`
+  });
+};
+
 
 $(document).ready(function (){
 });
