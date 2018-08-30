@@ -20,6 +20,12 @@ var renderSearchResults = (results) => {
   return resultList
 };
 
+var showCommits = (el) => {
+  $.get(`https://api.github.com/repos/${el.dataset.owner}/${el.dataset.repository}/commits`, data => {
+    $('#details').html(renderCommits(data))
+  })
+}
+
 
 $(document).ready(function (){
 });
