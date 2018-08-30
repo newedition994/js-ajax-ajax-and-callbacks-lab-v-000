@@ -18,7 +18,7 @@ var renderSearchResults = (results) => {
     </div>`
   });
   return resultList
-}
+};
 
 
 $(document).ready(function (){
